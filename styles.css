@@ -9,28 +9,28 @@ body {
   color: #111;
 }
 
-/* Header with Profile Picture */
+/* Header with small profile picture */
 .header {
   display: flex;           /* Image and text side by side */
   align-items: center;     /* Vertically center */
-  gap: 20px;               /* Space between image and text */
-  margin-bottom: 50px;
+  gap: 15px;               /* Small space between image and text */
+  margin-bottom: 40px;
 }
 
 .profile-pic {
-  width: 120px;            /* Image size */
-  height: 120px;
-  border-radius: 50%;      /* Makes image circular */
-  object-fit: cover;       /* Ensures image fills circle */
+  width: 60px;             /* Smaller headshot size */
+  height: 60px;
+  border-radius: 50%;      /* Circular image */
+  object-fit: cover;       /* Fill the circle */
 }
 
 .header-text h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0.2em;
 }
 
 .header-text p {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #555;
 }
 
