@@ -1,3 +1,4 @@
+/* General Page Styles */
 body {
   font-family: Arial, sans-serif;
   max-width: 800px;
@@ -8,21 +9,38 @@ body {
   color: #111;
 }
 
-header {
-  text-align: center;
+/* Header with Profile Picture */
+.header {
+  display: flex;           /* Image and text side by side */
+  align-items: center;     /* Vertically center */
+  gap: 20px;               /* Space between image and text */
   margin-bottom: 50px;
 }
 
-h1 {
-  font-size: 3em;
+.profile-pic {
+  width: 120px;            /* Image size */
+  height: 120px;
+  border-radius: 50%;      /* Makes image circular */
+  object-fit: cover;       /* Ensures image fills circle */
+}
+
+.header-text h1 {
+  font-size: 2.5em;
   margin-bottom: 0.2em;
 }
 
+.header-text p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Section Titles */
 h2 {
   margin-top: 40px;
   color: #222;
 }
 
+/* Links */
 a {
   color: #007acc;
   text-decoration: none;
@@ -32,6 +50,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Lists */
 ul {
   list-style: none;
   padding: 0;
@@ -41,6 +60,7 @@ ul li {
   margin-bottom: 10px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   margin-top: 60px;
