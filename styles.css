@@ -18,8 +18,8 @@ body {
 }
 
 .profile-pic {
-  width: 120px;             /* Smaller headshot size */
-  height: 120px;
+  width: 360px;             /* Smaller headshot size */
+  height: 360px;
   border-radius: 50%;      /* Circular image */
   object-fit: cover;       /* Fill the circle */
 }
