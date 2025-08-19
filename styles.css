@@ -13,7 +13,7 @@ body {
 .header {
   display: flex;           /* Image and text side by side */
   align-items: center;     /* Vertically center */
-  gap: 15px;               /* Small space between image and text */
+  gap: 8px;               /* Small space between image and text */
   margin-bottom: 40px;
 }
 
