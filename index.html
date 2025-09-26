@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr Mohsen Dorraki — Lecturer · ML Scientist</title>
+  <meta name="description" content="Official website of Dr Mohsen Dorraki — Lecturer and Machine Learning Scientist at the University of Adelaide. Research, publications, teaching, funding, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10;--card:#121318;--text:#e9edf1;--muted:#aab4bf;--brand:#5dd3ff;--accent:#b28dff;--line:#1c1f26;
+      --bgL:#ffffff;--cardL:#f7f8fa;--textL:#0f172a;--mutedL:#475569;--lineL:#e5e7eb;--brandL:#0ea5e9;--accentL:#7c3aed;
+    }
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;background:var(--bg);color:var(--text)}
+    .light body{background:var(--bgL);color:var(--textL)}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,12,16,.7);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+    .light header{background:rgba(255,255,255,.7);border-bottom-color:var(--lineL)}
+    .wrap{max-width:1100px;margin:auto;padding:0 20px}
+    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    nav .left{display:flex;gap:14px;align-items:center}
+    .logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));display:grid;place-items:center;color:#081018;font-weight:800}
+    .brand{font-weight:700;letter-spacing:.2px}
+    .muted{color:var(--muted)}
+    .light .muted{color:var(--mutedL)}
+    .navlinks{display:flex;gap:18px;flex-wrap:wrap}
+    .navlinks a{color:inherit;text-decoration:none;font-weight:500;opacity:.9}
+    .navlinks a:hover{opacity:1}
+    .btn{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:8px 12px;border-radius:12px;text-decoration:none;color:inherit}
+    .btn:hover{border-color:var(--brand);box-shadow:0 0 0 3px rgba(93,211,255,.15)}
+    .toggle{cursor:pointer}
+
+    .hero{padding:64px 0 32px}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+    .light .card{background:var(--cardL);border-color:var(--lineL)}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 8px}
+    h2{font-size:clamp(22px,2.5vw,30px);margin:24px 0 12px}
+    h3{font-size:18px;margin:20px 0 6px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:999px}
+
+    .sections{padding:20px 0 80px}
+    section{scroll-margin-top:80px;margin:28px 0}
+    .twocol{display:grid;grid-template-columns:220px 1fr;gap:18px}
+    @media (max-width:800px){.twocol{grid-template-columns:1fr}}
+    .k{font-weight:600;opacity:.9}
+    ul{margin:0;padding:0 0 0 20px}
+    li{margin:8px 0}
+    .list-tight li{margin:4px 0}
+    .pill{display:inline-block;margin-right:8px;margin-bottom:8px;border:1px solid var(--line);padding:6px 10px;border-radius:999px}
+    .footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+
+    .tag{font-size:12px;border:1px solid var(--line);padding:2px 8px;border-radius:999px;margin-left:8px}
+    a{color:inherit}
+    .links a{display:inline-flex;gap:8px;align-items:center;text-decoration:none;border:1px solid var(--line);padding:8px 12px;border-radius:12px;margin:6px 8px 0 0}
+    .links a:hover{border-color:var(--brand)}
+
+    .timeline{border-left:2px solid var(--line);margin-left:10px;padding-left:18px}
+    .titem{margin:16px 0}
+    .titem .when{font-weight:600}
+
+    .top{position:fixed;right:18px;bottom:18px}
+    .top a{display:inline-flex;border:1px solid var(--line);padding:10px 12px;border-radius:12px;text-decoration:none}
+
+    .headshot{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block;margin:auto;margin-bottom:20px;border:3px solid var(--brand)}
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="left">
+          <div class="logo">MD</div>
+          <div>
+            <div class="brand">Dr Mohsen Dorraki</div>
+            <div class="muted">Lecturer · Machine Learning Scientist</div>
+          </div>
+        </div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#funding">Funding</a>
+          <a href="#service">Service</a>
+          <a href="#contact" class="btn" id="contactBtn">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="grid">
+        <div class="card">
+          <img src="assets/Mohsen.png" alt="Dr Mohsen Dorraki" class="headshot" />
+          <h1 style="font-size: 32px;">I build AI models that solve complex problems in healthcare</h1>
+          <div class="links" style="margin-top:16px;">
+            <a href="http://pimedtech.com.s3-website-ap-southeast-2.amazonaws.com/" target="_blank" rel="noopener" style="display:block; margin-bottom:8px;">Pi MedTech</a>
+            <a href="https://researchers.adelaide.edu.au/profile/mohsen.dorraki" target="_blank" rel="noopener" style="display:block; margin-bottom:8px;">University of Adelaide Profile</a>
+            <a href="https://scholar.google.com/citations?user=ytJLk2UAAAAJ&hl=en" target="_blank" rel="noopener" style="display:block; margin-bottom:8px;">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/dorraki/" target="_blank" rel="noopener" style="display:block; margin-bottom:8px;">LinkedIn</a>
+            <a href="https://x.com/mohsen_dorraki" target="_blank" rel="noopener" style="display:block;">𝕏</a>
+          </div>
+          
+        </div>
+        <div class="card">
+          <h2 style="margin-top:0">At a glance</h2>
+          <div class="twocol">
+            <div class="k">Current roles</div>
+            <div>Founder of Pi MedTech, Lecturer at University of Adelaide, Research Fellow at AIML</div>
+          
+            <div class="k">Impact</div>
+            <div>h‑index 10 · 30+ publications in Q1 · Associate Editor at IEEE Access, member of Ethics Committee at University of Adelaide.</div>
+          
+            <div class="k">Funding</div>
+            <div>$1.7M+ competitive research funding</div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="sections">
+      <section id="about" class="card">
+        <h2>About</h2>
+
+        <div style="margin-bottom: 80px;">
+          <strong> 2025 – Current:
+            <a href="http://pimedtech.com.s3-website-ap-southeast-2.amazonaws.com/" target="_blank" 
+               style="color:#007acc; text-decoration:underline;">
+               CTO and Founder of Pi MedTech
+            </a>
+          </strong><br>
+          <img src="assets/PiMedTech.png" alt="Pi MedTech" style="height:48px; vertical-align:middle; margin-right:8px;">
+          Pi MedTech<br>
+          <em> [We create and run smart health products that use AI to make healthcare more personal and effective.]
+
+          </div>
+              
+        <div style="margin-bottom: 80px;">
+          <strong> 2024 – Current:
+            <a href="https://researchers.adelaide.edu.au/profile/mohsen.dorraki" target="_blank" 
+               style="color:#007acc; text-decoration:underline;">
+               Lecturer
+            </a>
+          </strong><br>
+          <img src="assets/uniADL.png" alt="University of Adelaide" style="height:48px; vertical-align:middle; margin-right:8px;">
+          School of Computer and Mathematical Sciences, The University of Adelaide<br>
+          <img src="assets/AIML.png" alt="AIML" style="height:48px; vertical-align:middle; margin-right:8px;">
+          The Australian Institute for Machine Learning (AIML)<br>
+          <em>[I am researching cardiology and cancer AI. I am coordinating postgrad courses such as Foundation of Computer Science and Master projects.]</em>
+        </div>
+      
+        <div style="margin-bottom: 80px;">
+          <strong>2023 – 2024:</strong> Course Coordinator and Lecturer<br>
+          <img src="assets/Flinders.png" alt="Flinders University" style="height:48px; vertical-align:middle; margin-right:8px;">
+          Flinders University<br>
+          <em>[Developing and coordinating the Engineering Programming course, a Python course for Engineering students.]</em>
+        </div>
+      
+        <div style="margin-bottom: 80px;">
+          <strong>2021 – 2024:</strong> Research Fellow, Machine Learning Scientist<br>
+          <img src="assets/AIML.png" alt="AIML" style="height:48px; vertical-align:middle; margin-right:8px;">
+          The Australian Institute for Machine Learning (AIML)<br>
+          <img src="assets/SAHMRI.png" alt="SAHMRI" style="height:48px; vertical-align:middle; margin-right:8px;">
+          South Australian Health and Medical Research Institute (SAHMRI)<br>
+          <em>[We established Platform AI in SAHMRI in collaboration with AIML. Implemented medical AI models into SAHMRI data platforms.]</em>
+        </div>
+      
+        <div style="margin-bottom: 80px;">
+          <strong>2017 – 2021:</strong> Teaching staff, Research Assistant, and PhD student<br>
+          <img src="assets/uniADL.png" alt="University of Adelaide" style="height:48px; vertical-align:middle; margin-right:8px;">
+          The University of Adelaide<br>
+          <em>[Mathematically showed cancer vascular networks are smarter than normal human vascular networks, taking strategies from transport networks. Received Dean’s Commendation for Doctoral Thesis Excellence.]</em>
+        </div>
+      </section>
+      
+      
+
+      <section id="research" class="card">
+        <h2>Research Focus</h2>
+        <p>Developing innovative machine learning methodologies for medical data — from ECG analysis and physiological signal processing to AI‑assisted document workflows and disease prediction. The goal: scalable solutions that improve healthcare delivery and outcomes.</p>
+        <h3>Selected collaborations & projects</h3>
+        <ul>
+          <li><strong>Medtronic</strong> — ECG‑based ejection fraction inference and LV dysfunction detection (Lead/Co‑CI).</li>
+          <li><strong>Cardiomics dashboard</strong> — real‑time CVD insights (THRF grant).</li>
+          <li><strong>Oncology & Omics</strong> — microbiome and salivomics studies; cachexia risk modelling (Pfizer ASPIRE; FHMS).</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="card">
+        <h2>Publications (selected)</h2>
+        <ul>
+          <li><em>JACC Advance</em> — Improving CVD risk prediction with ML using mental health data (2024).</li>
+          <li><em>Cancers</em> — Deep learning for breast density classification in histology (2025).</li>
+          <li><em>PNAS Nexus</em> — Network analysis of subchondral trabecular bone structures (2022).</li>
+          <li><em>Communications Biology</em> — Tumour vascular networks (2021).</li>
+          <li><em>Scientific Reports</em> — Periodicity in C‑reactive protein levels (2018) & Truels and strategies for survival (2019).</li>
+          <li><em>IEEE Access</em> — Angiogenic networks; CRP forecasting; SPR fiber sensors (2019–2020).</li>
+        </ul>
+        <p>See the full list on <a href="https://scholar.google.com/citations?user=ytJLk2UAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      </section>
+
+      <section id="teaching" class="card">
+        <h2>Teaching & Coordination</h2>
+        <div class="timeline">
+          <div class="titem">
+            <div class="when">2024–current · University of Adelaide</div>
+            <div>
+              <strong>Foundations of Computer Science A & B</strong> (COMP SCI 7210/7211) — Course Coordinator & Lecturer (>200 students, managing 14 TAs; three teaching periods annually).
+            </div>
+          </div>
+          <div class="titem">
+            <div class="when">2024–2025 · University of Adelaide</div>
+            <div>
+              <strong>Introduction to Applied Programming</strong> (COMP SCI 1015) — Course Coordinator & Lecturer (>200 students).
+            </div>
+          </div>
+          <div class="titem">
+            <div class="when">Research Project (Master of CS)</div>
+            <div>COMP SCI 7100A / 7100B — Course Coordinator & Lecturer (two teaching periods annually).</div>
+          </div>
+          <div class="titem">
+            <div class="when">2023–2024 · Flinders University</div>
+            <div><strong>Engineering Programming</strong> (ENGR 1206) — Course design & coordination; 100% student satisfaction (Sem 1, 2023).</div>
+          </div>
+        </div>
+        <p class="muted">SELT highlights: 99% “effective teacher”, 97% “overall course quality”.</p>
+      </section>
+
+      <section id="funding" class="card">
+        <h2>Funding (selected, $1.7M+)</h2>
+        <ul class="list-tight">
+          <li><strong>Medtronic Inc.</strong> — LV dysfunction detection via external ECG (Phase 2), $431,305 (2024–2025).</li>
+          <li><strong>Medtronic Inc.</strong> — EF inference from ECG (Lead CI), $423,970 (2023).</li>
+          <li><strong>BioPlatforms Australia (SAGC)</strong> — Multi‑omics for chemo‑brain, $139,930 (2024).</li>
+          <li><strong>Tour De Cure (Cat 1)</strong> — RAdio‑GEnomics in paediatric brain tumours, $100,000 (2024).</li>
+          <li><strong>THRF</strong> — Cardiomics real‑time dashboard, $125,000 (2023).</li>
+          <li><strong>Pfizer ASPIRE</strong> — GDF‑15 & cachexia risk model in H&N cancer, $371,540 (2022).</li>
+          <li><strong>FHMS SRSS</strong> — Salivomics & treatment side‑effects, $82,125 (2022).</li>
+          <li><strong>CAR</strong> — Postdoc & PhD support (2021).</li>
+        </ul>
+      </section>
+
+      <section id="awards" class="card">
+        <h2>Awards & Recognition</h2>
+        <ul>
+          <li>Dean’s Commendation for Doctoral Thesis Excellence — University of Adelaide.</li>
+          <li>Global Talent (MedTech) — Distinguished Talent visa, Australian Government.</li>
+          <li>DR Stranks Travelling Fellowship — Stony Brook University visit.</li>
+          <li>AMSI grants; School of EEE PG support; DPP Program Scholarship (UoA, 2025).</li>
+        </ul>
+      </section>
+
+      <section id="service" class="card">
+        <h2>Professional Service & Engagement</h2>
+        <ul>
+          <li>Associate Editor, <em>IEEE Access</em>; active reviewer.</li>
+          <li>Member, UoA SET Lower Risk Human Research Ethics Committee (2025– ).</li>
+          <li>Member, IEEE & EMBS; ACAIM & PCAIM.</li>
+          <li>Co‑founder, Plus AI (theplusai.com); organizer of Medical AI events at SAHMRI.</li>
+          <li>Led industry collaborations with Medtronic and wearable tech firms for AI deployment.</li>
+        </ul>
+      </section>
+
+      <section id="supervision" class="card">
+        <h2>Research Supervision</h2>
+        <p>Principal supervisor for 1 PhD; co‑supervisor for 2 PhDs; mentoring 8+ Masters and 9 Honours students (many graduated; award‑winning projects and a
+
+          <!-- Add this at the very end of your HTML, after all sections -->
+<script>
+  const contactBtn = document.getElementById('contactBtn');
+
+  contactBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // prevent the default anchor behavior
+    alert("Please visit one of the links below my photo to get in touch with me.");
+  });
+</script>
+</html>
